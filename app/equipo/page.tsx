@@ -9,7 +9,7 @@ const teamMembers = [
     id: "miembro-1",
     name: "José Recinos",
     role: "CEO & Fundador",
-    bio: "Profesional con más de 10 años de experiencia en el sector tecnológico. Especialista en transformación digital y estrategia empresarial.",
+    bio: "Profesional con más de 4 años de experiencia en el sector tecnológico. Especialista en transformación digital y estrategia empresarial.",
     skills: ["Estrategia Digital", "Liderazgo", "Innovación", "Desarrollo Web", "APIs", "Integración","Machine Learning"],
     linkedin: "#",
     email: "jose.recinos@boldr-tech.com",
