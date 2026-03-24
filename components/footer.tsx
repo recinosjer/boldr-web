@@ -86,9 +86,8 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-sm uppercase tracking-wider text-[#e63946] mb-5">Contacto</h3>
             <ul className="space-y-3 text-white/40 text-sm">
-              <li>info@boldr-tech.com</li>
-              <li>+34 900 000 000</li>
-              <li>Madrid, España</li>
+              <li>info@boldr.com.es</li>
+              <li>Santander, España</li>
             </ul>
           </div>
         </div>

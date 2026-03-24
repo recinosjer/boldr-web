@@ -12,7 +12,7 @@ const teamMembers = [
     bio: "Profesional con más de 4 años de experiencia en el sector tecnológico. Especialista en transformación digital y estrategia empresarial.",
     skills: ["Estrategia Digital", "Liderazgo", "Innovación", "Desarrollo Web", "APIs", "Integración","Machine Learning"],
     linkedin: "#",
-    email: "jose.recinos@boldr-tech.com",
+    email: "jose.recinos@boldr.com.es",
     photo: "/jose-recinos.jpg",
   },
   {
@@ -22,7 +22,8 @@ const teamMembers = [
     bio: "Experto en seguridad informática, especialista en arquitecturas de software y desarrollo de soluciones",
     skills: ["Ciberseguridad", "Arquitectura Software", "Cloud Computing", "DevOps","APIs", "Desarrollo Backend","Machine Learning"],
     linkedin: "#",
-    email: "integrante2@boldr-tech.com",
+    email: "jose.rodriguez@boldr.com.es",
+    photo: "/jose-rodriguez.jpg",
   },
   {
     id: "miembro-3",
@@ -31,7 +32,7 @@ const teamMembers = [
     bio: "Especialista en análisis de datos y Business Intelligence. Experiencia en implementación de soluciones de Big Data y analítica avanzada.",
     skills: ["Business Intelligence", "Desarrollo Backend", "APIs", "Big Data","Machine Learning","Integración de base de datos"],
     linkedin: "#",
-    email: "diego.barraza@boldr-tech.com",
+    email: "diego.barraza@boldr.com.es",
     photo: "/diego-barraza.jpg",
   },
   {
@@ -41,7 +42,8 @@ const teamMembers = [
     bio: "Experto en desarrollo backend con certificaciones internacionales. Especializado en arquitecturas escalables y optimización de rendimiento.",
     skills: ["Desarrollo Backend", "Arquitectura Software", "Gestion de Datos", "Integración de APIs"],
     linkedin: "#",
-    email: "integrante4@boldr-tech.com",
+    email: "sergio.mayen@boldr.com.es",
+    photo: "/sergio-mayen.jpg",
   },
   {
     id: "miembro-5",
@@ -50,7 +52,8 @@ const teamMembers = [
     bio: "Desarrollador full-stack con amplia experiencia en proyectos de integración y desarrollo de software a medida.",
     skills: ["Desarrollo Web", "Gestión de Proyectos",  "APIs", "Integración","Optimización de Rendimiento"],
     linkedin: "#",
-    email: "integrante5@boldr-tech.com",
+    email: "alejandro.gonzalez@boldr.com.es",
+    photo: "/alejandro-gonzalez.jpg",
   },
 ]
 
