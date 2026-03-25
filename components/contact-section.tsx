@@ -73,19 +73,10 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="text-white/40 text-sm">Email</p>
-                  <p className="text-white font-medium">info@boldr-tech.com</p>
+                  <p className="text-white font-medium">info@boldr.com.es</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/[0.05]">
-                <div className="p-3 rounded-lg bg-[#e63946]/10">
-                  <Phone className="w-5 h-5 text-[#e63946]" />
-                </div>
-                <div>
-                  <p className="text-white/40 text-sm">Teléfono</p>
-                  <p className="text-white font-medium">+34 900 000 000</p>
-                </div>
-              </div>
 
               <div className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/[0.05]">
                 <div className="p-3 rounded-lg bg-[#e63946]/10">
@@ -93,7 +84,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="text-white/40 text-sm">Ubicación</p>
-                  <p className="text-white font-medium">Madrid, España</p>
+                  <p className="text-white font-medium">Santander, España</p>
                 </div>
               </div>
             </div>
