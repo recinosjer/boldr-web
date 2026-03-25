@@ -93,7 +93,67 @@ export default function EquipoPage() {
           </p>
         </div>
       </section>
+          
+      {/* Misión & Visión */}
+      <section className="py-20 relative">
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+        <div className="absolute bottom-0 left-1/4 w-[400px] h-[200px] bg-[#e63946]/4 blur-[120px] rounded-full" />
 
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            {/* Misión */}
+            <div
+              className="relative p-8 rounded-2xl bg-[#0e0e0e]"
+              style={{
+                border: '1px solid rgba(230,57,70,0.25)',
+                boxShadow: '0 0 18px rgba(230,57,70,0.12), 0 0 40px rgba(230,57,70,0.05)',
+              }}
+            >
+              <div className="flex items-center gap-3 mb-5">
+                <div className="p-2.5 rounded-xl bg-[#e63946]/10 border border-[#e63946]/20">
+                  <svg className="w-5 h-5 text-[#e63946]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <span className="text-[#e63946] font-semibold tracking-widest text-xs uppercase">Nuestra Misión</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4">
+                Impulsar la transformación digital donde más se necesita
+              </h3>
+              <p className="text-white/50 text-sm leading-relaxed">
+                En BOLDR apostamos por acercar la tecnología avanzada a startups y empresas de España y Latinoamérica. Ofrecemos soluciones TIC personalizadas — desde desarrollo web hasta Business Intelligence — con un acompañamiento cercano, ágil y disponible 24/7, para que cada cliente tenga a su lado un equipo comprometido con su crecimiento real.
+              </p>
+            </div>
+
+            {/* Visión */}
+            <div
+              className="relative p-8 rounded-2xl bg-[#0e0e0e]"
+              style={{
+                border: '1px solid rgba(230,57,70,0.25)',
+                boxShadow: '0 0 18px rgba(230,57,70,0.12), 0 0 40px rgba(230,57,70,0.05)',
+              }}
+            >
+              <div className="flex items-center gap-3 mb-5">
+                <div className="p-2.5 rounded-xl bg-[#e63946]/10 border border-[#e63946]/20">
+                  <svg className="w-5 h-5 text-[#e63946]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                </div>
+                <span className="text-[#e63946] font-semibold tracking-widest text-xs uppercase">Nuestra Visión</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4">
+                Ser el referente tecnológico de la nueva generación empresarial
+              </h3>
+              <p className="text-white/50 text-sm leading-relaxed">
+                Queremos convertirnos en el aliado tecnológico de referencia para la nueva generación de empresas en el mercado hispanohablante. Con un equipo joven formado en las empresas más competitivas del sector, aspiramos a liderar la migración tecnológica en Latinoamérica, construyendo un puente sólido entre la innovación europea y el potencial empresarial de la región.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
       {/* Team Grid */}
       <section className="py-20 md:py-28 bg-[#080808] relative">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
@@ -141,7 +201,7 @@ export default function EquipoPage() {
             ¿Quieres trabajar <span className="text-[#e63946]">con nosotros</span>?
           </h2>
           <p className="text-white/50 text-lg max-w-xl mx-auto mb-8">
-            Estamos siempre buscando talento. Si te apasiona la tecnología, ponte en contacto con nosotros.
+            Estamos siempre buscando empresas con ganas de innovar y crecer en la tecnología. Si te apasiona la tecnología, ponte en contacto con nosotros.
           </p>
           <Link
             href="/#contacto"
