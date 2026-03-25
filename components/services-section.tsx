@@ -4,27 +4,25 @@ import Link from "next/link"
 const serviceCategories = [
   {
     icon: Globe,
-    title: "Web & Presencia Digital",
+    title: "Web & Presencia Digital / Business Intelligence",
     services: [
       {
         name: "Web corporativa para tu negocio",
         description: "Una web como escaparate de tu negocio, que podrás gestionar de forma completamente autónoma.",
+        category: "Web & Presencia Digital",
       },
-    ],
-  },
-  {
-    icon: BarChart3,
-    title: "Business Intelligence",
-    services: [
       {
         name: "Business Data Service",
         description: "Solución de Business Intelligence para el acceso unificado y centralizado a toda la información de tu negocio.",
+        category: "Business Intelligence",
       },
       {
         name: "Cuadros de mando 360°",
         description: "Implantación de cuadros de mando específicos que agrupen tus datos para dar soporte a las decisiones de tu negocio.",
+        category: "Business Intelligence",
       },
     ],
+    icons: [Globe, BarChart3],
   },
   {
     icon: Cog,
@@ -33,16 +31,20 @@ const serviceCategories = [
       {
         name: "Digitalización documental",
         description: "Solución avanzada para procesar, digitalizar, clasificar y organizar la documentación de tu organización.",
+        category: "",
       },
       {
         name: "Integración Global ETL",
         description: "Captura datos de diferentes fuentes, transfórmalos y cárgalos en un sistema centralizado para analítica.",
+        category: "",
       },
       {
         name: "Gestión de tareas y tickets",
         description: "Gestiona el ciclo de vida completo de tareas y tickets asociados a elementos de trabajo.",
+        category: "",
       },
     ],
+    icons: [Cog],
   },
   {
     icon: Users,
@@ -51,16 +53,20 @@ const serviceCategories = [
       {
         name: "Relaciones comerciales",
         description: "Control efectivo de todas las actividades realizadas para aumentar la rentabilidad de tu acción comercial.",
+        category: "",
       },
       {
         name: "Atención al cliente",
         description: "Aumenta la satisfacción de tus clientes gestionando todas las solicitudes de forma proactiva y eficaz.",
+        category: "",
       },
       {
         name: "Gestión de marketing",
         description: "Optimiza tus campañas de Marketing realizando un seguimiento y analizando el impacto en ventas.",
+        category: "",
       },
     ],
+    icons: [Users],
   },
   {
     icon: Shield,
@@ -69,8 +75,10 @@ const serviceCategories = [
       {
         name: "Seguridad básica y avanzada",
         description: "Servicio de ciberseguridad para proteger los dispositivos y datos de tu empresa.",
+        category: "",
       },
     ],
+    icons: [Shield],
   },
 ]
 
@@ -125,22 +133,36 @@ export function ServicesSection() {
               <div key={category.title}>
                 {/* Category Header */}
                 <div className="flex items-center gap-4 mb-6 md:mb-8">
-                  <div className="p-3 rounded-xl bg-[#e63946]/10 border border-[#e63946]/20">
-                    <Icon className="w-5 h-5 text-[#e63946]" />
+                  <div className="flex items-center gap-2">
+                    {category.icons.map((IconItem, i) => (
+                      <div key={i} className="p-3 rounded-xl bg-[#e63946]/10 border border-[#e63946]/20">
+                        <IconItem className="w-5 h-5 text-[#e63946]" />
+                      </div>
+                    ))}
                   </div>
                   <h3 className="text-xl md:text-2xl font-bold text-[#e8e0d0]">{category.title}</h3>
                 </div>
-                
+
                 {/* Services Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <div className={`grid gap-4 md:gap-6 ${
+                  category.services.length === 1
+                    ? "grid-cols-1"
+                    : category.services.length === 2
+                    ? "grid-cols-1 md:grid-cols-2"
+                    : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+                }`}>
                   {category.services.map((service) => (
                     <div
                       key={service.name}
                       className="group relative p-6 rounded-2xl bg-[#0e0e0e] transition-all duration-300 cursor-pointer service-card"
                     >
                       <div className="absolute inset-0 rounded-2xl opacity-0" />
-
                       <div className="relative flex flex-col h-full">
+                        {service.category && (
+                          <span className="inline-block self-start text-[10px] font-semibold uppercase tracking-widest text-[#e63946]/70 border border-[#e63946]/15 px-2 py-0.5 rounded-full mb-3">
+                            {service.category}
+                          </span>
+                        )}
                         <h4 className="text-base font-bold text-white mb-3 leading-snug">
                           {service.name}
                         </h4>
